@@ -78,6 +78,7 @@ export function email_blur(event) {
 	// Add your code for this event here: 
 	setTimeout(() => {
 	let isValid = event.target.valid;
+	let inputValue =event.target.value["formatted"];
 	if(isValid) {
 		$w("#errorEmail").hide();
 		$w("#register").enable();
